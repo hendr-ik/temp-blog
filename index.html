@@ -15,6 +15,9 @@
     *, *:before, *:after {
       box-sizing: inherit;
     }
+    body {
+      line-height: 1.4;
+    }
     body, h1, h2, h3, p {
       margin: 0;
       padding: 0;
@@ -29,8 +32,7 @@
       margin-bottom: 1rem;
     }
     h3 {
-      text-align: right;
-      font-size: 12px;
+      font-size: 14px;
       color: #aaa;
     }
     img {
@@ -40,6 +42,42 @@
     }
     p {
       color: #777;
+      padding-bottom: 0.7rem;
+    }
+    hr {
+      border: none;
+      padding-bottom: 0.6rem;
+    }
+    em {
+      color: #000;
+      font-style: normal;
+    }
+    button {
+      background-color: #777;
+      display: inline-block;
+      cursor: pointer;
+      color:#fff;
+      padding: 0.8rem 1.8rem;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      border-width: 0;
+    }
+    a:link, 
+    a:visited, 
+    a:hover, 
+    a:active {
+      color:#777;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    h3 a:link, 
+    h3 a:visited, 
+    h3 a:hover, 
+    h3 a:active {
+      color:#aaa;
+      font-weight: bold;
+      text-decoration: none;
     }
     .container {
       display: flex;
@@ -67,7 +105,7 @@
       padding-left: 1rem;
     }
     .article {
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
     }
     @media only screen and (max-width: 60em) {
       .main,
@@ -98,35 +136,62 @@
 <body>
   <div class="container"> 
     <div class="head">
-      <h1>Demo page</h1>
+      <h1>Offen demo page</h1>
     </div>
     <div class="main">
       <div class="article">
-        <h2>Headline</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <h2>Excellent</h2>
+        <p>
+          You have successfully started the Offen demo and opened this page. It is intended to give you an impression of how things run in a production environment.
+        </p>
+        <p>
+          Offen only collects data after an opt-in on the bottom banner. For this demo, however, a temporary set of usage data was generated that you can now explore. 
+        </p>
+        <p>
+          Go ahead and take a look at all offered metrics and review the backend functionality. Open the Auditorium and log in as an operator.
+        </p>
+        <hr>
+        <p>
+          Username: <em>demo@offen.dev</em>
+        </p>
+        <p>
+          Password: <em>demo</em>
+        </p>
+        <hr>
+        <button href="http://localhost:9876/login/" rel="noopener" target="_blank">
+          Open Auditorium
+        </button>
       </div>
       <div class="article">
         <img alt="demo-page" src="demo-page.jpg">
-        <h2>Headline</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <h2>Take things further</h2>
+        <p>Want to test drive Offen on production level? You find all necessary material to install and self host on our <a href="https://www.offen.dev/get-started/" rel="noopener" target="_blank">Get started page.</a></p>
       </div>
     </div>
     <div class="side">
       <div class="article">
-        <h2>Headline</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <h2>What your users see</h2>
+        <p>
+          The unique feature of Offen is that your users can see and manage their own data. Put yourself in the perspective of your users. First opt in on the bottom banner. Then head to the <a href="http://localhost:9876/auditorium/" rel="noopener" target="_blank">Auditorium for users.</a>
+        </p>
       </div>
       <div class="article">
-        <h2>Headline</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <h2>Learn more</h2>
+        <p>
+          Want to know more about how to install and run Offen? Want to contribute as a developer? Have a look at our detailed documentation. <a href="https://docs.offen.dev/" rel="noopener" target="_blank">Read the docs.</a>
+        </p>
       </div>
       <div class="article">
-        <h2>Headline</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <h2>Feedback welcome</h2>
+        <p>
+          No matter if you have difficulties with the installation, find our UI hard to understand or catch anything unexpected. Get in touch via <a href="mailto:hioffen@posteo.de" rel="noopener">email.</a>
+        </p>
       </div>
     </div>
     <div class="foot">
-      <h3>Footer</h3>
+      <h3><a href="https://www.offen.dev/" rel="noopener" target="_blank">Offen</a></h3>
+      <h3>Transparent web analytics</h3>
+      <h3>for everyone</h3>
     </div>
 </body>
 </html>
