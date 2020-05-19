@@ -25,7 +25,7 @@
     }
     h1 {
       font-size: 40px;
-      margin-bottom: 2rem;
+      margin-bottom: 1.8rem;
     }
     h2 {
       font-size: 20px;
@@ -42,11 +42,11 @@
     }
     p {
       color: #777;
-      padding-bottom: 0.7rem;
+      padding-bottom: 0.5rem;
     }
     hr {
       border: none;
-      padding-bottom: 0.4rem;
+      padding-bottom: 0.2rem;
     }
     em {
       color: #000;
@@ -57,7 +57,7 @@
       display: inline-block;
       cursor: pointer;
       color:#fff;
-      padding: 0.8rem 1.8rem;
+      padding: 0.8rem 2.2rem;
       font-size: 16px;
       font-weight: bold;
       text-decoration: none;
@@ -89,19 +89,19 @@
     .head,
     .foot {
       width: 60em;
-      padding: 2rem;
+      padding: 1.8rem;
     }
     .foot {
       padding-bottom: 14rem;
     }
     .main {
       max-width: 40em;
-      padding: 2rem;
+      padding: 1.8rem;
       padding-right: 1rem;
     }
     .side {
       max-width: 20em;
-      padding: 2rem;
+      padding: 1.8rem;
       padding-left: 1rem;
     }
     .article {
@@ -111,17 +111,17 @@
       .main,
       .side {
         max-width: 100%;
-        padding: 2rem;
+        padding: 1.8rem;
         padding-bottom: 0;
       }
       .side {
         padding-top: 0;
       }
       .foot {
-        margin-top: 2rem;
+        margin-top: 1.8rem;
       }
       .side .article:first-of-type {
-        padding-top: 2rem;
+        padding-top: 1.8rem;
         border-top:1px solid #ccc;
       }
     }
@@ -136,16 +136,19 @@
 <body>
   <div class="container"> 
     <div class="head">
-      <h1>Glad you made it</h1>
+      <h1>You made it</h1>
     </div>
     <div class="main">
       <div class="article">
         <h2>Welcome to the Offen demo page</h2>
         <p>
-          You have successfully started the Offen demo and opened this page. It is intended to give you an impression of how things run in a production environment.
+          It is intended to give you an impression of how things run in a production environment.
         </p>
         <p>
-          For this demo a temporary set of usage data was generated that you can now explore. Go ahead and take a look at all offered metrics and review the backend functionality. Open the demo Auditorium and log in as an operator with:
+          For this demo a temporary set of usage data was generated that you can now explore. Go ahead and take a look at all offered metrics and review the backend functionality.
+        </p>
+        <p>
+          Log in to the Auditorium using the following credentials.
         </p>
         <hr>
         <p>
@@ -156,48 +159,51 @@
         </p>
         <hr>
         <button href="http://localhost:9876/login/" rel="noopener" target="_blank">
-          Open Auditorium
+          Log in
         </button>
       </div>
       <div class="article">
-        <h2>About the banner</h2>
+        <h2>About the banner on this page</h2>
         <p>
-          Offen only collects data after opt in. If you do opt in on this page your real usage data is added to the generated set of demo data.
+          Offen only collects data after opt in. This is done by clicking <em>Yes please</em> on the bottom banner entiteld <em>Continue with transparent analytics</em>.
         </p>
         <p>
-          Once you are opted in, you can opt out agin in the <a href="http://localhost:9876/auditorium/" rel="noopener" target="_blank">Auditorium for users.</a>
+          If you do opt in your real usage data is added to the generated set of demo data.
         </p>
         <p>
-          When you are optet out, simply delete all cookies for this page so that the banner is displayed again.
+          Once you are opted in, you can opt out again in the <a href="http://localhost:9876/auditorium/" rel="noopener" target="_blank">Auditorium for users.</a>
+        </p>
+        <p>
+          When you are opted out, you can simply delete all cookies for this page to display the banner again.
         </p>
       </div>
       <div class="article">
-        <!--
-        <img alt="demo-page" src="demo-page.jpg">
-      -->
-        <h2>Take things further</h2>
+        <h2>What your users see</h2>
         <p>
-          Want to test drive Offen on production level? You find all necessary material to install and self host on our <a href="https://www.offen.dev/get-started/" rel="noopener" target="_blank">Get started page.</a>
+          The unique feature of Offen is that your users can see and manage their own data.
+        </p>
+        <p>
+          Put yourself in the perspective of your users. First opt in on the banner. Then head to the <a href="http://localhost:9876/auditorium/" rel="noopener" target="_blank">Auditorium for users.</a>
         </p>
       </div>
     </div>
     <div class="side">
       <div class="article">
-        <h2>What your users see</h2>
+        <h2>Take things further</h2>
         <p>
-          The unique feature of Offen is that your users can see and manage their own data. Put yourself in the perspective of your users. First opt in on the bottom banner. Then head to the <a href="http://localhost:9876/auditorium/" rel="noopener" target="_blank">Auditorium for users.</a>
+          Want to test drive Offen on production level? You find all necessary material to install and self host on our designated <a href="https://www.offen.dev/get-started/" rel="noopener" target="_blank">Get started page.</a>
         </p>
       </div>
       <div class="article">
         <h2>Learn more</h2>
         <p>
-          Want to know more about how to install and run Offen? Want to contribute as a developer? Have a look at our detailed documentation. <a href="https://docs.offen.dev/" rel="noopener" target="_blank">Read the docs.</a>
+          Want to know more about how to install and run Offen? Like to contribute as a developer? Have a look at our detailed documentation. <a href="https://docs.offen.dev/" rel="noopener" target="_blank">Read the docs.</a>
         </p>
       </div>
       <div class="article">
         <h2>Feedback welcome</h2>
         <p>
-          No matter if you have difficulties with the installation, find our UI hard to understand or catch anything unexpected. <a href="mailto:hioffen@posteo.de" rel="noopener">Get in touch.</a>
+          No matter if you hade difficulties with the installation or want to share your enthusiasm. <a href="mailto:hioffen@posteo.de" rel="noopener">Get in touch.</a>
         </p>
       </div>
     </div>
